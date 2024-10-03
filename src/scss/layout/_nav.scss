@@ -1,0 +1,44 @@
+.head-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  .head-left{
+    display: flex;
+    align-items: center;
+    .logo{
+      img{
+
+      }
+    }
+    nav{
+      ul{
+        display: flex;
+        padding: 0 40px;
+        li{
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  .head-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .banking{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: #FFC628;
+      padding: 18px 25px;
+      border-radius: 30px;
+    }
+    .menu-toggle{
+      text-align: center;
+      padding: 16px 19px;
+      color: gray;
+      border: 1px solid gray;
+      border-radius: 50%;
+    }
+  }
+}

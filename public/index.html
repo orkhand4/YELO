@@ -1,40 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yelo Bank - Müasir Bank Xidmətləri</title>
   <link rel="stylesheet" href="../src/scss/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/f6fb2b47cc.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
   <!-- navbar -->
   <header>
-
-
+    <div class="container">
+      <div class="head-bottom">
+        <div class="head-left">
+          <div class="logo">
+            <a href="https://www.yelo.az/"><img src="./assets/logo.svg" alt="YELO"></a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Kreditlər</a></li>
+              <li><a href="#">Kartlar</a></li>
+              <li><a href="#">Əmanətlər</a></li>
+              <li><a href="#">Cashback</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="head-right">
+          <div class="banking">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            <p>İnternet Bank</p>
+          </div>
+          <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
-<!-- navbar -->
+  <!-- navbar -->
 
-<!-- home -->
+  <!-- home -->
   <main>
-    <section>
+    <!-- <section class="hero">
+      
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-1">
+            <div class="swiper-content">
+              <h3>Yeni planların üçün nağd pul krediti</h3>
+              <button>Sifariş et</button>
+              <p>Daha ətraflı</p>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+          </div>
+          <div class="swiper-slide bg-2 ">
+            <div class="swiper-content">
+              <h2>Krediti cemi 2 deqiqeye al!</h2>
+            </div>
+          </div>
+          <div class="swiper-slide bg-3">
+            <div class="swiper-content">
+              <h2>Krediti cemi 2 deqiqeye al!</h2>
+            </div>
+          </div>
+          <div class="swiper-slide bg-4">
+            <div class="swiper-content">
+              <h2>Krediti cemi 2 deqiqeye al!</h2>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section> -->
+
+    <section class="stories">
       <div class="container">
-        <h1>Yelo Bank</h1>
-        <p>bsizin</p>
+        <div class="stories-heading">
+          <h5>Storilər</h5>
+          <span>3</span>
+        </div>
+        <div class="stories-wrapper">
+          <div class="story green">
+            <div class="story-desc">
+              <span>Yelo kart</span>
+              <p>Yelo Kart hər əməliyyatda rahatlıq anlayışını dəyişəcək</p>
+            </div>
+          </div>
+          <div class="story blue">
+            <div class="story-desc">
+              <span>Kredit</span>
+              <p>Xərclərini təxirə salma, hər zaman dəstək üçün Yelo Bank var</p>
+            </div>
+          </div>
+          <div class="story red">
+            <div class="story-desc">
+              <span>Hissələ</span>
+              <p>Yelo Kredit/taksit kartı ilə indi xərclə, 24 ay ərzində hissə-hissə ödə</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <section id="yelo-calculator">
+      <div class="container">
+        <div class="yelo-calculator">
+          <div class="light">
+            <div class="light-desc">
+              <h2>Yelo Light</h2>
+              <p>İstənilən ödənişlər üçün doğru seçim</p>
+              <div class="cashback">
+                <div class="cash">
+                  <span>Qalığa gəlir</span>
+                  <p>4%</p>
+                </div>
+                <div class="cash">
+                  <span>Cashback</span>
+                  <p>30%-dək</p>
+                </div>
+              </div>
+              <button>Sifariş et</button>
+            </div>
+            <div class="light-bg">
+            </div>
+          </div>
+          <div class="calculator">
+            <div class="calc-heading">
+              <h2>Kredit Kalkulyatoru</h2>
+              <a href="#">Daha ətraflı</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
-<!-- home -->
+  <!-- home -->
 
 
-<!-- footer -->
+  <!-- footer -->
   <footer>
 
 
   </footer>
-<!-- footer -->
+  <!-- footer -->
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  
-  <script src="../src/js/app.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+  <!-- <script src="../src/js/app.js"></script> -->
 </body>
+
 </html>
