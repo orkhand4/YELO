@@ -196,13 +196,15 @@
             </div>
             <div class="currency-wrapper">
               <div class="currency-header">
-                <h2>Valyuta məzənnələri</h2>
+                <b>Valyuta məzənnələri</b>
                 <div class="payment-type">
                   <span>Nağd</span>
+                  <!-- <span>Nağdsız</span> -->
+                  <i class="fa-solid fa-angle-down"></i>
                 </div>
               </div>
               <div class="input-line">
-                <input type="text" placeholder="Satıram">
+                <input type="number" placeholder="Satıram">
                 <select name="from" class="curr">
                   <option value="azn">AZN</option>
                   <option value="usd">USD</option>
@@ -210,7 +212,7 @@
                 </select>
               </div>
               <div class="input-line">
-                <input type="text" placeholder="Alıram">
+                <div class="buying">Alıram</div>
                 <select name="from" class="curr">
                   <option value="azn">AZN</option>
                   <option value="usd">USD</option>
@@ -237,7 +239,9 @@
               <p class="crr-info">Region filiallarında məzənnələr fərqli ola bilər</p>
               <div class="exchange-rate">
                 <a href="#">Bütün məzənnələr</a>
-                <i class="fa-solid fa-arrow-right-long"></i>
+                <div class="arrow-icon">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
               </div>
             </div>
           </div>

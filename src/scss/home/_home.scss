@@ -1,7 +1,3 @@
-// h1{
-//   color:$primary-color;
-// }
-
 // .swiper {
 //   width: 100%;
 //   height: 100%;
@@ -256,7 +252,7 @@
     }
   }
   .useful-wrapper {
-    @include Flexible($justify: space-between, $align: center, $gap: 30px);
+    @include Flexible($justify: space-between, $align: start, $gap: 30px);
     .yelo-app {
       @include Flexible($justify: space-between, $align: start);
       border: 1px solid #ececec;
@@ -315,34 +311,79 @@
     border: 1px solid #ececec;
     border-radius: 10px;
     width: 33.3333%;
+    padding: 30px;
     .currency-header {
-      h2 {
+      @include Flexible($justify: space-between, $align: center);
+      b {
+        font-size: 22px;
       }
       .payment-type {
-        span {
-        }
+        color: $gray-color;
+        font-size: 14px;
+        cursor: pointer;
       }
     }
     .input-line {
+      @include Flexible($justify: space-between, $align: center);
+      border-bottom: 3px solid $primary-color;
+      padding-block: 8px;
       input {
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 40px;
+        font-size: 23px;
+        font-weight: 600;
+        color: #000;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
       }
       select {
+        border: none;
+        font-weight: 600;
         option {
         }
       }
+      .buying {
+        font-size: 23px;
+        font-weight: 600;
+      }
     }
     .input-result {
+      @include Flexible($justify: space-between, $align: center);
+      margin-block: 25px;
       .crr-item {
+        width: 33.33%;
         p {
+          padding-top: 5px;
+          color: $gray-color;
         }
         b {
+          padding-top: 5px;
+          display: block;
         }
       }
     }
     .crr-info {
+      font-size: 14px;
+      padding-top: 10px;
+      color: #000000e6;
     }
     .exchange-rate {
+      @include Flexible ($justify: space-between, $align:center);
+      border-top: 1px solid #ececec;
+      margin: 15px -30px -30px;
+      padding: 17px 30px;
+      cursor: pointer;
       a {
+        color: #0091FE;
+        font-weight: 600;
+      }
+      .arrow-icon{
+        color: #0091FE;
       }
     }
   }
