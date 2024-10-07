@@ -23,7 +23,6 @@ body {
 body .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding-inline: 28px;
 }
 
 section {
@@ -150,12 +149,13 @@ section {
 .yelo-calculator {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   gap: 30px;
 }
 .yelo-calculator .light {
   width: 50%;
   background-color: #F3F1F7;
+  border: 1px solid #ececec;
   border-radius: 10px;
   overflow: hidden;
   height: 100%;
@@ -249,6 +249,11 @@ section {
 .yelo-calculator .calculator .range-wrapper .range-box .price span {
   font-size: 14px;
   font-weight: 600;
+}
+.yelo-calculator .calculator .range-wrapper .range-box input {
+  accent-color: #FFC628;
+  border: none;
+  outline: none;
 }
 .yelo-calculator .calculator .amount-order {
   display: flex;
@@ -436,4 +441,114 @@ section {
 }
 .useful .currency-wrapper .exchange-rate .arrow-icon {
   color: #0091FE;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border-top: 1px solid #ececec;
+  padding-block: 32px;
+}
+footer nav section h3 {
+  padding-bottom: 16px;
+  font-size: 25px;
+  line-height: 1.5;
+}
+footer nav section ul li {
+  padding-bottom: 8px;
+  line-height: 1.43;
+}
+footer nav section ul li a {
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+footer .foot-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+  padding: 15px 0;
+}
+footer .foot-top .social {
+  display: block;
+  height: 40px;
+  padding: 5px 0;
+}
+footer .foot-top .social li {
+  display: inline-block;
+  margin-right: 8px;
+}
+footer .foot-top .social li a {
+  width: 40px;
+  height: 40px;
+  background-color: #f3f1f7;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  border-radius: 100%;
+  transition: all 0.2s;
+}
+footer .contact-info {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+footer .contact-info .ci-item {
+  width: auto;
+  line-height: 1.5;
+}
+footer .contact-info .ci-item p {
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+footer .contact-info .ci-item b {
+  color: #000;
+}
+footer .contact-info .ci-item b a {
+  color: #000;
+  text-decoration: none;
+}
+footer .foot-bottom {
+  padding: 30px 0 40px;
+  text-align: center;
+}
+footer .foot-bottom .logo {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 144px;
+  height: 36px;
+  background-image: url(/public/assets/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+footer .foot-bottom ul {
+  width: 100%;
+}
+footer .foot-bottom ul li {
+  display: inline-block;
+  margin-inline: 10px;
+  font-size: 14px;
+}
+footer .foot-bottom ul li p {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+footer .foot-bottom ul li a {
+  color: rgba(0, 0, 0, 0.5019607843);
+  text-decoration: underline;
+}
+footer .foot-bottom .byme {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+footer .foot-bottom .byme p {
+  display: inline-block;
+}
+footer .foot-bottom .byme a {
+  background-image: url(/public/assets/jis.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding-left: 22px;
+  display: inline-block;
+  margin-left: 9px;
+  color: rgba(0, 0, 0, 0.5019607843);
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
