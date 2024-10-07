@@ -13,6 +13,10 @@ a {
   color: #000;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -145,7 +149,7 @@ section {
 .yelo-calculator {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   gap: 30px;
 }
 .yelo-calculator .light {
@@ -194,4 +198,160 @@ section {
 }
 .yelo-calculator .calculator {
   width: 50%;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  padding: 30px;
+}
+.yelo-calculator .calculator .calc-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.yelo-calculator .calculator .calc-heading h2 {
+  font-size: 22px;
+}
+.yelo-calculator .calculator .calc-heading .details {
+  color: #0071c7;
+}
+.yelo-calculator .calculator .calc-heading .details a {
+  color: #0071c7;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.yelo-calculator .calculator .range-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+}
+.yelo-calculator .calculator .range-wrapper .range-box {
+  border-right: 1px solid #ececec;
+  padding: 10px 10px 0 10px;
+}
+.yelo-calculator .calculator .range-wrapper .range-box span {
+  color: rgba(0, 0, 0, 0.5019607843);
+  font-size: 14px;
+}
+.yelo-calculator .calculator .range-wrapper .range-box .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 10px;
+}
+.yelo-calculator .calculator .range-wrapper .range-box .price p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.yelo-calculator .calculator .range-wrapper .range-box .price span {
+  font-size: 14px;
+  font-weight: 600;
+}
+.yelo-calculator .calculator .amount-order {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 40px;
+}
+.yelo-calculator .calculator .amount-order .amount {
+  margin-right: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.yelo-calculator .calculator .amount-order .amount span {
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+.yelo-calculator .calculator .amount-order .amount p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.yelo-calculator .calculator .amount-order .order button {
+  background: #FFC628;
+  border: none;
+  border-radius: 10px;
+  padding: 13px 25px;
+  width: 180px;
+  height: 55px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.useful {
+  margin-bottom: 50px;
+}
+.useful .useful-header {
+  margin-bottom: 20px;
+}
+.useful .useful-header b {
+  font-size: 22px;
+}
+.useful .useful-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.useful .useful-wrapper .yelo-app {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  height: 100%;
+  width: 66.6666%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  position: relative;
+}
+.useful .useful-wrapper .yelo-app .app-desc {
+  width: 50%;
+  padding: 45px;
+  height: 100%;
+  line-height: 1.8;
+}
+.useful .useful-wrapper .yelo-app .app-desc h2 {
+  font-size: 28px;
+}
+.useful .useful-wrapper .yelo-app .app-desc p {
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+.useful .useful-wrapper .yelo-app .app-img {
+  width: 50%;
+  height: 115%;
+  overflow: hidden;
+  bottom: 0px;
+  right: 30px;
+  position: absolute;
+}
+.useful .useful-wrapper .yelo-app .app-img .app-phone {
+  width: 100%;
+  height: 100%;
+  background-image: url(/public/assets/bg-app-phone.webp);
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  z-index: 99999;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+.useful .useful-wrapper .yelo-app .app-img .bg-app-phone {
+  width: 250px;
+  height: 375px;
+  background-size: cover;
+  position: absolute;
+  left: 95px;
+  bottom: 0;
+  z-index: 9999999;
+}
+.useful .currency-wrapper {
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  width: 33.3333%;
 }/*# sourceMappingURL=style.css.map */
