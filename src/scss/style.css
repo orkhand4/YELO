@@ -307,13 +307,15 @@ section {
   align-items: start;
   border: 1px solid #ececec;
   border-radius: 10px;
-  height: 100%;
-  width: 66.6666%;
+  height: 375px;
+  width: 66.666%;
+  background-image: url(/public/assets/bg-yelo-app.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center;
   position: relative;
+  overflow: hidden;
 }
 .useful .useful-wrapper .yelo-app .app-desc {
   width: 50%;
@@ -321,45 +323,90 @@ section {
   height: 100%;
   line-height: 1.8;
 }
-.useful .useful-wrapper .yelo-app .app-desc h2 {
-  font-size: 28px;
+.useful .useful-wrapper .yelo-app .app-desc b {
+  font-size: 30px;
+  line-height: 34px;
+  margin-bottom: 10px;
+  display: block;
 }
 .useful .useful-wrapper .yelo-app .app-desc p {
   color: rgba(0, 0, 0, 0.5019607843);
+  line-height: 26px;
+  font-size: 18px;
+}
+.useful .useful-wrapper .yelo-app .app-desc ul {
+  width: 50%;
+  height: 55px;
+  border-radius: 5px;
+  border: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 45px;
+  left: 45px;
+  background: white;
+}
+.useful .useful-wrapper .yelo-app .app-desc ul li {
+  width: 33.33%;
+}
+.useful .useful-wrapper .yelo-app .app-desc ul li a {
+  display: block;
+  padding-inline: 6px;
+  white-space: nowrap;
+}
+.useful .useful-wrapper .yelo-app .app-desc ul li a div {
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position-x: left;
+  background-position-y: 11px;
+  display: block;
+  padding: 6px 0 6px 34px;
+}
+.useful .useful-wrapper .yelo-app .app-desc ul li a div span {
+  opacity: 0.5;
+  font-size: 12px;
+  color: #505050;
+}
+.useful .useful-wrapper .yelo-app .app-desc ul li a div p {
+  opacity: 0.5;
+  font-family: "m";
+  font-size: 16px;
+  color: #505050;
+  letter-spacing: -0.4px;
+  line-height: 9px;
 }
 .useful .useful-wrapper .yelo-app .app-img {
   width: 50%;
-  height: 115%;
-  overflow: hidden;
   bottom: 0px;
   right: 30px;
   position: absolute;
+  height: 115%;
+  overflow: hidden;
 }
 .useful .useful-wrapper .yelo-app .app-img .app-phone {
+  background-image: url(/public/assets/bg-app-phone.webp);
+  position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(/public/assets/bg-app-phone.webp);
+  top: 0px;
+  left: 0px;
   background-size: contain;
   background-position: bottom right;
   background-repeat: no-repeat;
-  z-index: 99999;
-  top: 0px;
-  left: 0px;
-  position: absolute;
 }
-.useful .useful-wrapper .yelo-app .app-img .bg-app-phone {
+.useful .useful-wrapper .yelo-app .app-img .app-self {
   width: 250px;
   height: 375px;
-  background-size: cover;
   position: absolute;
   left: 95px;
   bottom: 0;
-  z-index: 9999999;
+  background-size: cover;
+  background-color: #ffc629;
 }
 .useful .currency-wrapper {
   border: 1px solid #ececec;
   border-radius: 10px;
-  width: 33.3333%;
+  width: 33.333%;
   padding: 30px;
 }
 .useful .currency-wrapper .currency-header {
@@ -436,11 +483,11 @@ section {
   cursor: pointer;
 }
 .useful .currency-wrapper .exchange-rate a {
-  color: #0091FE;
+  color: #0091fe;
   font-weight: 600;
 }
 .useful .currency-wrapper .exchange-rate .arrow-icon {
-  color: #0091FE;
+  color: #0091fe;
 }
 
 footer nav {
