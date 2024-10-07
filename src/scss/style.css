@@ -408,6 +408,7 @@ section {
   border-radius: 10px;
   width: 33.333%;
   padding: 30px;
+  overflow: hidden;
 }
 .useful .currency-wrapper .currency-header {
   display: flex;
@@ -481,6 +482,7 @@ section {
   margin: 15px -30px -30px;
   padding: 17px 30px;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .useful .currency-wrapper .exchange-rate a {
   color: #0091fe;
@@ -489,7 +491,18 @@ section {
 .useful .currency-wrapper .exchange-rate .arrow-icon {
   color: #0091fe;
 }
+.useful .currency-wrapper .exchange-rate:hover {
+  background-color: #0071c7;
+}
+.useful .currency-wrapper .exchange-rate:hover a, .useful .currency-wrapper .exchange-rate:hover .arrow-icon {
+  color: #fff;
+}
 
+@media screen and (max-width: 1000px) {
+  .stories {
+    margin-bottom: 30px;
+  }
+}
 footer nav {
   display: flex;
   justify-content: space-between;
@@ -502,12 +515,18 @@ footer nav section h3 {
   font-size: 25px;
   line-height: 1.5;
 }
+footer nav section h3:hover {
+  text-decoration: underline;
+}
 footer nav section ul li {
   padding-bottom: 8px;
   line-height: 1.43;
 }
 footer nav section ul li a {
   color: rgba(0, 0, 0, 0.5019607843);
+}
+footer nav section ul li a:hover {
+  text-decoration: underline;
 }
 footer .foot-top {
   display: flex;
@@ -582,6 +601,9 @@ footer .foot-bottom ul li a {
   color: rgba(0, 0, 0, 0.5019607843);
   text-decoration: underline;
 }
+footer .foot-bottom ul li a:hover {
+  text-decoration: none;
+}
 footer .foot-bottom .byme {
   margin-top: 10px;
   color: rgba(0, 0, 0, 0.5019607843);
@@ -598,4 +620,7 @@ footer .foot-bottom .byme a {
   margin-left: 9px;
   color: rgba(0, 0, 0, 0.5019607843);
   text-decoration: underline;
+}
+footer .foot-bottom .byme a:hover {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

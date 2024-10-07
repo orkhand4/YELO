@@ -8,6 +8,9 @@ footer {
         padding-bottom: 16px;
         font-size: 25px;
         line-height: 1.5;
+        &:hover{
+          text-decoration: underline;
+        }
       }
       ul {
         li {
@@ -15,6 +18,9 @@ footer {
           line-height: 1.43;
           a {
             color: #00000080;
+            &:hover{
+              text-decoration: underline;
+            }
           }
         }
       }
@@ -88,6 +94,9 @@ footer {
         a {
           color: #00000080;
           text-decoration: underline;
+          &:hover{
+            text-decoration: none;
+          }
         }
       }
     }
@@ -106,6 +115,9 @@ footer {
         margin-left: 9px;
         color: #00000080;
         text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+        }
       }
     }
   }

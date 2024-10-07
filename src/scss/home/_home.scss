@@ -40,9 +40,7 @@
 
 .stories {
   .stories-heading {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    @include Flexible($align: center, $gap: 10px);
     margin-bottom: 10px;
     h5 {
       font-size: 20px;
@@ -369,6 +367,7 @@
     border-radius: 10px;
     width: 33.333%;
     padding: 30px;
+    overflow: hidden;
     .currency-header {
       @include Flexible($justify: space-between, $align: center);
       b {
@@ -435,6 +434,7 @@
       margin: 15px -30px -30px;
       padding: 17px 30px;
       cursor: pointer;
+      transition: all .2s;
       a {
         color: #0091fe;
         font-weight: 600;
@@ -442,6 +442,23 @@
       .arrow-icon {
         color: #0091fe;
       }
+      &:hover{
+        background-color: $blue-color;
+        a, .arrow-icon{
+          color: $white-color;
+        }
+      }
     }
   }
+}
+
+
+@media screen and (max-width:1000px) {
+  .stories {
+    margin-bottom: 30px;
+    .stories-heading{
+
+    }
+  }
+
 }
